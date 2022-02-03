@@ -17,8 +17,8 @@ if($conn2->connect_error){
 }
 else{
 
-    $stmt2 = $conn2->prepare("Insert into Donation(fullname, email, phone, country, address, city)
-    values(?, ?, ?, ?, ?, ?)");
+    $stmt2 = $conn2->prepare("Insert into Donation(fullname, email, phone, amount, country, address, city)
+    values(?, ?, ?, ?, ?, ?, ?)");
     $stmt2->bind_param("ssiisss",$fullname, $email, $phone, $amount, $country, $address, $city);
     $stmt2->execute();
     $stmt2->close();
