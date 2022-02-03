@@ -74,10 +74,10 @@ input[type="email"]:focus, input[type="password"]:focus, input[type="text"]:focu
   box-shadow: none;
   border: 1px solid #f89d35;
 }
-mark {  
-  background-color: #f89d35;
-}
 
+.py-7 {
+  padding: 7rem 0px;
+}
 
 .btn {
   display: inline-block;
@@ -395,10 +395,23 @@ a {
   padding-right: 80px;
 }
 
+/*--
+	features-work Start 
+--*/
+#features-work {
+  padding-top: 50px;
+  padding-bottom: 75px;
+}
+
+#features-work .block ul li {
+  width: 19%;
+  text-align: center;
+  display: inline-block;
+  padding: 40px 0px;
+}
 
 #navbar li {
-  padding-left: 25px;
-  padding-right: 15px;
+  padding-left: 15px;
 }
 
 #navbar .nav-link {
@@ -420,6 +433,7 @@ a {
 
 .header-top {
   border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  font-size: 14px;
   padding: 2px 0px;
   font-size: 14px;
 }
@@ -450,7 +464,7 @@ a {
 }
 
 .header-top .btn {
-  font-size: 12px;
+  font-size: 12px !important;
   margin-right: 0px;
 }
 
@@ -502,6 +516,16 @@ ul.dropdown-menu li {
   padding-left: 0px !important;
 }
 
+.bg-1 {
+  background: url("https://www.arm.com/blogs/blueprint/wp-content/uploads/2021/04/water_poverty.jpg") no-repeat 50% 50%;
+  background-size: cover;
+}
+
+.bg-2 {
+  background: url("https://www.arm.com/blogs/blueprint/wp-content/uploads/2021/04/water_poverty.jpg");
+  background-size: cover;
+}
+
 .slider {
   background: url("https://cdn.pixabay.com/photo/2016/01/13/22/46/boy-1139042__480.jpg") no-repeat;
   background-size: cover;
@@ -528,10 +552,39 @@ ul.dropdown-menu li {
   background: #f7f9f3;
 }
 
+.about-item-block {
+  clear: both;
+}
+
+.about-item-block .icon {
+  float: left;
+  margin-right: 40px;
+  font-size: 30px;
+  margin-bottom: 20px;
+  position: relative;
+  width: 80px;
+  height: 80px;
+  text-align: center;
+  border-radius: 100%;
+  display: flex;
+  background: #f89d35;
+  color: #fff;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-item-block .icon:after {
+  position: absolute;
+  content: "";
+  border: 5px solid #ddd;
+  width: 105px;
+  height: 105px;
+  border-radius: 100%;
+}
+
 .bg-color-2 {
   background: #f3f0ea;
 }
-
 .volunteer {
   position: relative;
 }
@@ -567,17 +620,102 @@ ul.dropdown-menu li {
   border-color: #f89d35;
 }
 
-
-.confirmation-content i {
-  width: 120px;
-  height: 120px;
-  background: #f89d35;
-  color: #fff;
-  display: inline-block;
-  border-radius: 100%;
-  padding-top: 25px;
+.video {
+  position: relative;
 }
 
+.video:before {
+  position: absolute;
+  content: "";
+  left: 0px;
+  top: 0px;
+  background: rgba(0, 0, 0, 0.95);
+  width: 60%;
+  height: 100%;
+}
+
+.video:after {
+  position: absolute;
+  content: "";
+  left: 0px;
+  top: 0px;
+  background: url("https://www.arm.com/blogs/blueprint/wp-content/uploads/2021/04/water_poverty.jpg") no-repeat;
+  background-size: cover;
+  width: 60%;
+  height: 100%;
+  z-index: -1;
+}
+
+.video .video-block {
+  position: relative;
+}
+
+.video .video-block .img-block {
+  position: relative;
+  box-shadow: 0px 0px 70px 0px rgba(0, 42, 106, 0.1);
+}
+
+.video .video-block .videoplay {
+  display: inline-block;
+  background: #fff;
+  color: #863bae;
+  width: 80px;
+  height: 80px;
+  border-radius: 100%;
+  text-align: center;
+  padding-top: 25px;
+  position: absolute;
+  right: 0px;
+  top: 50%;
+  left: 0px;
+  margin: auto;
+  margin-top: -25px;
+}
+
+.video .video-block .videoplay:hover {
+  cursor: pointer;
+}
+.feature {
+  position: relative;
+  padding-top: 300px;
+}
+
+.feature:before {
+  position: absolute;
+  content: "";
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  width: 100%;
+  height: 70%;
+  background: url("https://www.arm.com/blogs/blueprint/wp-content/uploads/2021/04/water_poverty.jpg") no-repeat;
+  background-size: cover;
+}
+
+.feature-inner {
+  background: #fff;
+  padding: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.03);
+}
+
+.feature-inner i {
+  font-size: 50px;
+  color: #f89d35;
+}
+
+.feature-inner h4 {
+  margin-bottom: 0px;
+  margin-top: 10px;
+}
+
+.feature-inner p {
+  color: #8c8c8c;
+}
+
+.bg-counter {
+  background: url("https://www.arm.com/blogs/blueprint/wp-content/uploads/2021/04/water_poverty.jpg") no-repeat;
+  background-size: cover;
+}
 
 .counter {
   background: #f7f9f3;
@@ -640,14 +778,6 @@ ul.dropdown-menu li {
   margin-bottom: 25px;
 }
 
-.donation .offline-donation ul li {
-  margin: 15px 0px;
-}
-
-.donation .offline-donation ul address, .donation .offline-donation ul span {
-  font-weight: 700;
-}
-
 .volunteer-form .form-control {
   height: 50px;
   border: 1px solid rgba(0, 0, 0, 0.06);
@@ -658,11 +788,9 @@ ul.dropdown-menu li {
 }
 
 .cta-block {
-  background: url("https://www.arm.com/blogs/blueprint/wp-content/uploads/2021/04/water_poverty.jpg") no-repeat;
+  background: url("https://www.arm.com/blogs/blueprint/wp-content/uploads/2021/04/water_poverty.jpg") fixed 50% 50%;
   background-size: cover;
-  background-position: 10% 0%;
-  padding: 100px 0;
-  position: relative;
+  padding: 120px 0px;
 }
 
 .testimonial-item {
@@ -737,6 +865,7 @@ ul.dropdown-menu li {
 }
 
 
+
 .section-bottom {
   padding-bottom: 80px;
 }
@@ -772,6 +901,61 @@ h3.quote::before {
 
 .border-1 {
   border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.next-prev {
+  border-bottom: 1px solid #dedede;
+  border-top: 1px solid #dedede;
+  margin: 20px 0;
+  padding: 25px 0;
+}
+
+.next-prev a {
+  color: #000;
+}
+
+.next-prev a:hover {
+  color: #f89d35;
+}
+
+.next-prev .prev-post i {
+  margin-right: 10px;
+}
+
+.next-prev .next-post i {
+  margin-left: 10px;
+}
+
+.social-profile ul li {
+  margin: 0 10px 0 0;
+  display: inline-block;
+}
+
+.social-profile ul li a {
+  color: #4e595f;
+  display: block;
+  font-size: 16px;
+}
+
+.social-profile ul li a i:hover {
+  color: #f89d35;
+}
+
+
+.sidebar-widget.categories ul li {
+  margin-bottom: 15px;
+}
+
+.sidebar-widget.search {
+  position: relative;
+  background: #f7f9f3;
+}
+
+.sidebar-widget.search a {
+  position: absolute;
+  display: inline-block;
+  right: 40px;
+  top: 34px;
 }
 
 .footer {
@@ -900,7 +1084,13 @@ h3.quote::before {
   .header-top .header-top-info {
     padding-bottom: 15px;
   }
- 
+  .blog-item-meta span {
+    margin: 6px 0px;
+  }
+  .widget {
+    margin-bottom: 30px;
+    padding-bottom: 0px;
+  }
   .dropdown-menu {
     display: none;
     width: 100%;
@@ -908,6 +1098,12 @@ h3.quote::before {
   }
   #navbar .nav-link {
     padding: 15px 10px;
+  }
+  .volunteer::before {
+    display: none;
+  }
+  .volunteer-content {
+    padding-right: 0px;
   }
 }
 
@@ -930,24 +1126,21 @@ h3.quote::before {
     display: none;
   }
   .p-5 {
-    padding: 2rem !important;
+    padding: 2rem;
   }
   h2, .h2 {
     font-size: 1.3rem;
     font-weight: 600;
     line-height: 36px;
   }
-
+ 
   .footer-socials {
     margin-top: 20px;
   }
   .footer-socials li a {
     margin-left: 0px;
   }
-  .blog-item-meta span {
-    display: block;
-    margin: 6px 0px;
-  }
+  
   .widget {
     margin-bottom: 30px;
     padding-bottom: 0px;
@@ -982,10 +1175,7 @@ h3.quote::before {
     font-size: 56px;
     line-height: 70px;
   }
-  .blog-item-meta span {
-    display: block;
-    margin: 6px 0px;
-  }
+  
   .widget {
     margin-bottom: 30px;
     padding-bottom: 0px;
@@ -998,7 +1188,12 @@ h3.quote::before {
   #navbar .nav-link {
     padding: 15px 10px;
   }
-  
+  .volunteer::before {
+    display: none;
+  }
+  .volunteer-content {
+    padding-right: 0px;
+  }
 }
 
 @media (max-width: 992px) {
@@ -1020,7 +1215,6 @@ h3.quote::before {
     width: 100%;
   }
   .volunteer-form-wrap h2 {
-    color: #232323 ;
+    color: #232323;
   }
 }
-
